@@ -1,9 +1,9 @@
 package main
 
 import (
+	"go1f/pkg/db"
 	"go1f/pkg/server"
 
-	"github.com/Foreeyed/go-final-project.git/pkg/db"
 	"github.com/labstack/gommon/log"
 )
 
