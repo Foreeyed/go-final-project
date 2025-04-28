@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/Foreeyed/go-final-project.git/pkg/api"
+	"go1f/pkg/api"
 )
 
 const (
@@ -14,7 +14,7 @@ const (
 
 func Run() error {
 	api.Init()
-	
+
 	port, ok := os.LookupEnv("TODO_PORT")
 	if !ok {
 		port = defaultPort
