@@ -43,3 +43,8 @@ func InitDB(dbFile string) error {
 
 	return nil
 }
+
+
+func GetDB() *sql.DB {
+	return db
+}
