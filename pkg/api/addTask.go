@@ -99,6 +99,7 @@ func addTaskHandler(w http.ResponseWriter, r *http.Request) {
 	writeJson(w, map[string]interface{}{"id": id}, http.StatusOK)
 }
 
+
 func writeJson(w http.ResponseWriter, data any, statusCode int) {
 	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
 	w.WriteHeader(statusCode)

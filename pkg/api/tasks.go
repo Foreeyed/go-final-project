@@ -240,6 +240,5 @@ func doneTaskHandler(w http.ResponseWriter, r *http.Request) {
 		writeJson(w, map[string]string{"error": "update failed"}, http.StatusInternalServerError)
 		return
 	}
-
 	writeJson(w, map[string]string{}, http.StatusOK)
 }

@@ -6,11 +6,11 @@ import "net/http"
 func taskHandler(w http.ResponseWriter, r *http.Request) {
 	switch r.Method {
 	case http.MethodPost:
-		addTaskHandler(w, r) // Добавление новой задачи
+		addTaskHandler(w, r)
 	case http.MethodGet:
-		getTaskHandler(w, r) // Получение задачи по id
+		getTaskHandler(w, r)
 	case http.MethodPut:
-		updateTaskHandler(w, r) // Обновление задачи
+		updateTaskHandler(w, r)  
 	case http.MethodDelete:
 		deleteTaskHandler(w, r)
 	default:

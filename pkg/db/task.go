@@ -61,6 +61,7 @@ func GetTask(id string) (*Task, error) {
 	return &task, nil
 }
 
+
 func Tasks(limit int, search string, dateSearch string) ([]*Task, error) {
 	query := `SELECT id, date, title, comment, repeat FROM scheduler`
 

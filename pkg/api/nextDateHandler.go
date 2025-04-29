@@ -20,6 +20,7 @@ func nextDateHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	
 	date, err := time.Parse(TimeFormat, dateStr)
 	if err != nil {
 		http.Error(w, "parcing err 'date'", http.StatusBadRequest)

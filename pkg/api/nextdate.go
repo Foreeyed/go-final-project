@@ -20,6 +20,7 @@ func weekdayToISO(w time.Weekday) int {
 	return int(w)
 }
 
+
 func NextDate(now time.Time, dstart string, repeat string) (string, error) {
 	dateStart, err := time.Parse(TimeFormat, dstart)
 	if err != nil {
